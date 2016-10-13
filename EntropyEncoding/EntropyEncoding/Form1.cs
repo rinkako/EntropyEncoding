@@ -16,6 +16,8 @@ namespace EntropyEncoding
 		public Form1()
 		{
 			InitializeComponent();
+			HuffmanEncoder.SetUIContext(this);
+			ArithmeticEncoder.SetUIContext(this);
 		}
 
 		/// <summary>
@@ -23,8 +25,25 @@ namespace EntropyEncoding
 		/// </summary>
 		private void button1_Click(object sender, EventArgs e)
 		{
-			HuffmanEncoder.SetUIContext(this);
 			HuffmanEncoder.Get(this.input_textbox_huffman_pattern.Text);
+		}
+
+		private void button4_Click(object sender, EventArgs e)
+		{
+			ae = new ArithmeticEncoder(this.input_textbox_math_pattern.Text);
+			ae.GenerateSymbolTable();
+		}
+
+		private ArithmeticEncoder ae;
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			ae.Encode(this.input_textbox_math_pattern.Text);
+		}
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			ae.Decode(Convert.ToDouble(textBox2.Text));
 		}
 	}
 }

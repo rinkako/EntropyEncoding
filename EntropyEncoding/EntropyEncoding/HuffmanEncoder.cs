@@ -5,10 +5,14 @@ using System.Text;
 namespace EntropyEncoding
 {
 	/// <summary>
-	/// 哈夫曼编码类
+	/// 哈夫曼编码器类
 	/// </summary>
 	class HuffmanEncoder
 	{
+		/// <summary>
+		/// 设置前端UI的引用
+		/// </summary>
+		/// <param name="syncUI">窗体引用</param>
 		public static void SetUIContext(Form1 syncUI)
 		{
 			HuffmanEncoder.UIContext = syncUI;
@@ -76,6 +80,12 @@ namespace EntropyEncoding
 			}
 		}
 
+		/// <summary>
+		/// 递归绘制UI树
+		/// </summary>
+		/// <param name="root">递归绘制的根节点</param>
+		/// <param name="viewNodeParent">递归绘制的UI根节点</param>
+		/// <param name="tv">UI树对象</param>
 		private static void recursiveDrawTree(ResultTreeNode root, System.Windows.Forms.TreeNode viewNodeParent, System.Windows.Forms.TreeView tv)
 		{
 			if (root != null)
