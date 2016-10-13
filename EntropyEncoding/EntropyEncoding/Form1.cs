@@ -28,22 +28,34 @@ namespace EntropyEncoding
 			HuffmanEncoder.Get(this.input_textbox_huffman_pattern.Text);
 		}
 
+		/// <summary>
+		/// 按钮：生成符号表
+		/// </summary>
 		private void button4_Click(object sender, EventArgs e)
 		{
 			ae = new ArithmeticEncoder(this.input_textbox_math_pattern.Text);
 			ae.GenerateSymbolTable();
 		}
-
-		private ArithmeticEncoder ae;
-
+		
+		/// <summary>
+		/// 按钮：算术编码
+		/// </summary>
 		private void button2_Click(object sender, EventArgs e)
 		{
 			ae.Encode(this.input_textbox_math_pattern.Text);
 		}
 
+		/// <summary>
+		/// 按钮：算术解码
+		/// </summary>
 		private void button3_Click(object sender, EventArgs e)
 		{
 			ae.Decode(Convert.ToDouble(textBox2.Text), Convert.ToInt32(textBox1.Text));
 		}
+
+		/// <summary>
+		/// 算术编码器实例
+		/// </summary>
+		private ArithmeticEncoder ae;
 	}
 }

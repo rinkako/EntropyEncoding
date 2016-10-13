@@ -33,24 +33,24 @@
 			this.res_treeview_huffman_tree = new System.Windows.Forms.TreeView();
 			this.input_textbox_huffman_pattern = new System.Windows.Forms.TextBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.input_textbox_math_pattern = new System.Windows.Forms.TextBox();
-			this.button2 = new System.Windows.Forms.Button();
-			this.output_textbox_math_symbols = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.output_textbox_math_encoded = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.button3 = new System.Windows.Forms.Button();
-			this.output_textbox_math_decoded = new System.Windows.Forms.TextBox();
-			this.button4 = new System.Windows.Forms.Button();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.output_textbox_math_encodeproc = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
-			this.output_textbox_math_decodeproc = new System.Windows.Forms.TextBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.label6 = new System.Windows.Forms.Label();
+			this.output_textbox_math_decodeproc = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.output_textbox_math_encodeproc = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.button4 = new System.Windows.Forms.Button();
+			this.output_textbox_math_decoded = new System.Windows.Forms.TextBox();
+			this.button3 = new System.Windows.Forms.Button();
+			this.label3 = new System.Windows.Forms.Label();
+			this.output_textbox_math_encoded = new System.Windows.Forms.TextBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.output_textbox_math_symbols = new System.Windows.Forms.TextBox();
+			this.button2 = new System.Windows.Forms.Button();
+			this.input_textbox_math_pattern = new System.Windows.Forms.TextBox();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
@@ -119,82 +119,71 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "算术编码";
 			// 
-			// input_textbox_math_pattern
+			// label7
 			// 
-			this.input_textbox_math_pattern.Location = new System.Drawing.Point(6, 20);
-			this.input_textbox_math_pattern.Multiline = true;
-			this.input_textbox_math_pattern.Name = "input_textbox_math_pattern";
-			this.input_textbox_math_pattern.Size = new System.Drawing.Size(224, 50);
-			this.input_textbox_math_pattern.TabIndex = 5;
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(153, 308);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(41, 12);
+			this.label7.TabIndex = 21;
+			this.label7.Text = "长度：";
 			// 
-			// button2
+			// textBox1
 			// 
-			this.button2.Location = new System.Drawing.Point(155, 271);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(75, 23);
-			this.button2.TabIndex = 5;
-			this.button2.Text = "刷新";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
+			this.textBox1.Location = new System.Drawing.Point(155, 323);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(75, 21);
+			this.textBox1.TabIndex = 20;
 			// 
-			// output_textbox_math_symbols
+			// label6
 			// 
-			this.output_textbox_math_symbols.Location = new System.Drawing.Point(6, 91);
-			this.output_textbox_math_symbols.Multiline = true;
-			this.output_textbox_math_symbols.Name = "output_textbox_math_symbols";
-			this.output_textbox_math_symbols.Size = new System.Drawing.Size(224, 145);
-			this.output_textbox_math_symbols.TabIndex = 6;
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(236, 209);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(65, 12);
+			this.label6.TabIndex = 19;
+			this.label6.Text = "解码过程：";
 			// 
-			// label1
+			// output_textbox_math_decodeproc
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(6, 76);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(53, 12);
-			this.label1.TabIndex = 7;
-			this.label1.Text = "符号表：";
+			this.output_textbox_math_decodeproc.Location = new System.Drawing.Point(236, 224);
+			this.output_textbox_math_decodeproc.Multiline = true;
+			this.output_textbox_math_decodeproc.Name = "output_textbox_math_decodeproc";
+			this.output_textbox_math_decodeproc.Size = new System.Drawing.Size(367, 163);
+			this.output_textbox_math_decodeproc.TabIndex = 18;
 			// 
-			// label2
+			// label5
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(6, 253);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(65, 12);
-			this.label2.TabIndex = 8;
-			this.label2.Text = "编码结果：";
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(236, 20);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(65, 12);
+			this.label5.TabIndex = 17;
+			this.label5.Text = "编码过程：";
 			// 
-			// output_textbox_math_encoded
+			// output_textbox_math_encodeproc
 			// 
-			this.output_textbox_math_encoded.Location = new System.Drawing.Point(6, 273);
-			this.output_textbox_math_encoded.Name = "output_textbox_math_encoded";
-			this.output_textbox_math_encoded.Size = new System.Drawing.Size(138, 21);
-			this.output_textbox_math_encoded.TabIndex = 9;
+			this.output_textbox_math_encodeproc.Location = new System.Drawing.Point(236, 35);
+			this.output_textbox_math_encodeproc.Multiline = true;
+			this.output_textbox_math_encodeproc.Name = "output_textbox_math_encodeproc";
+			this.output_textbox_math_encodeproc.Size = new System.Drawing.Size(367, 171);
+			this.output_textbox_math_encodeproc.TabIndex = 16;
 			// 
-			// label3
+			// label4
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(6, 347);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(65, 12);
-			this.label3.TabIndex = 10;
-			this.label3.Text = "解码结果：";
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(6, 308);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(53, 12);
+			this.label4.TabIndex = 15;
+			this.label4.Text = "解码数：";
 			// 
-			// button3
+			// textBox2
 			// 
-			this.button3.Location = new System.Drawing.Point(155, 360);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(75, 23);
-			this.button3.TabIndex = 11;
-			this.button3.Text = "刷新";
-			this.button3.UseVisualStyleBackColor = true;
-			this.button3.Click += new System.EventHandler(this.button3_Click);
-			// 
-			// output_textbox_math_decoded
-			// 
-			this.output_textbox_math_decoded.Location = new System.Drawing.Point(6, 362);
-			this.output_textbox_math_decoded.Name = "output_textbox_math_decoded";
-			this.output_textbox_math_decoded.Size = new System.Drawing.Size(138, 21);
-			this.output_textbox_math_decoded.TabIndex = 12;
+			this.textBox2.Location = new System.Drawing.Point(6, 323);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.Size = new System.Drawing.Size(138, 21);
+			this.textBox2.TabIndex = 14;
 			// 
 			// button4
 			// 
@@ -206,77 +195,88 @@
 			this.button4.UseVisualStyleBackColor = true;
 			this.button4.Click += new System.EventHandler(this.button4_Click);
 			// 
-			// textBox2
+			// output_textbox_math_decoded
 			// 
-			this.textBox2.Location = new System.Drawing.Point(6, 323);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(138, 21);
-			this.textBox2.TabIndex = 14;
+			this.output_textbox_math_decoded.Location = new System.Drawing.Point(6, 362);
+			this.output_textbox_math_decoded.Name = "output_textbox_math_decoded";
+			this.output_textbox_math_decoded.Size = new System.Drawing.Size(138, 21);
+			this.output_textbox_math_decoded.TabIndex = 12;
 			// 
-			// label4
+			// button3
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(6, 308);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(53, 12);
-			this.label4.TabIndex = 15;
-			this.label4.Text = "解码数：";
+			this.button3.Location = new System.Drawing.Point(155, 360);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(75, 23);
+			this.button3.TabIndex = 11;
+			this.button3.Text = "刷新";
+			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
-			// output_textbox_math_encodeproc
+			// label3
 			// 
-			this.output_textbox_math_encodeproc.Location = new System.Drawing.Point(236, 35);
-			this.output_textbox_math_encodeproc.Multiline = true;
-			this.output_textbox_math_encodeproc.Name = "output_textbox_math_encodeproc";
-			this.output_textbox_math_encodeproc.Size = new System.Drawing.Size(367, 171);
-			this.output_textbox_math_encodeproc.TabIndex = 16;
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(6, 347);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(65, 12);
+			this.label3.TabIndex = 10;
+			this.label3.Text = "解码结果：";
 			// 
-			// label5
+			// output_textbox_math_encoded
 			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(236, 20);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(65, 12);
-			this.label5.TabIndex = 17;
-			this.label5.Text = "编码过程：";
+			this.output_textbox_math_encoded.Location = new System.Drawing.Point(6, 273);
+			this.output_textbox_math_encoded.Name = "output_textbox_math_encoded";
+			this.output_textbox_math_encoded.Size = new System.Drawing.Size(138, 21);
+			this.output_textbox_math_encoded.TabIndex = 9;
 			// 
-			// output_textbox_math_decodeproc
+			// label2
 			// 
-			this.output_textbox_math_decodeproc.Location = new System.Drawing.Point(236, 224);
-			this.output_textbox_math_decodeproc.Multiline = true;
-			this.output_textbox_math_decodeproc.Name = "output_textbox_math_decodeproc";
-			this.output_textbox_math_decodeproc.Size = new System.Drawing.Size(367, 163);
-			this.output_textbox_math_decodeproc.TabIndex = 18;
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(6, 253);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(65, 12);
+			this.label2.TabIndex = 8;
+			this.label2.Text = "编码结果：";
 			// 
-			// label6
+			// label1
 			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(236, 209);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(65, 12);
-			this.label6.TabIndex = 19;
-			this.label6.Text = "解码过程：";
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(6, 76);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(53, 12);
+			this.label1.TabIndex = 7;
+			this.label1.Text = "符号表：";
 			// 
-			// textBox1
+			// output_textbox_math_symbols
 			// 
-			this.textBox1.Location = new System.Drawing.Point(155, 323);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(75, 21);
-			this.textBox1.TabIndex = 20;
+			this.output_textbox_math_symbols.Location = new System.Drawing.Point(6, 91);
+			this.output_textbox_math_symbols.Multiline = true;
+			this.output_textbox_math_symbols.Name = "output_textbox_math_symbols";
+			this.output_textbox_math_symbols.Size = new System.Drawing.Size(224, 145);
+			this.output_textbox_math_symbols.TabIndex = 6;
 			// 
-			// label7
+			// button2
 			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(153, 308);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(41, 12);
-			this.label7.TabIndex = 21;
-			this.label7.Text = "长度：";
+			this.button2.Location = new System.Drawing.Point(155, 271);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(75, 23);
+			this.button2.TabIndex = 5;
+			this.button2.Text = "刷新";
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// input_textbox_math_pattern
+			// 
+			this.input_textbox_math_pattern.Location = new System.Drawing.Point(6, 20);
+			this.input_textbox_math_pattern.Multiline = true;
+			this.input_textbox_math_pattern.Name = "input_textbox_math_pattern";
+			this.input_textbox_math_pattern.Size = new System.Drawing.Size(224, 50);
+			this.input_textbox_math_pattern.TabIndex = 5;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1031, 422);
+			this.ClientSize = new System.Drawing.Size(928, 422);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "Form1";

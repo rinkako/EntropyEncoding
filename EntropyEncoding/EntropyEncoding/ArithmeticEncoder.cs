@@ -149,8 +149,7 @@ namespace EntropyEncoding
 			}
 			return -1;
 		}
-
-
+		
 		/// <summary>
 		/// 符号表
 		/// </summary>
