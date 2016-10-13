@@ -43,7 +43,7 @@ namespace EntropyEncoding
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			ae.Decode(Convert.ToDouble(textBox2.Text));
+			ae.Decode(Convert.ToDouble(textBox2.Text), Convert.ToInt32(textBox1.Text));
 		}
 	}
 }

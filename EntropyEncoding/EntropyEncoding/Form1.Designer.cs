@@ -49,6 +49,8 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.output_textbox_math_decodeproc = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
@@ -92,6 +94,8 @@
 			// 
 			// groupBox2
 			// 
+			this.groupBox2.Controls.Add(this.label7);
+			this.groupBox2.Controls.Add(this.textBox1);
 			this.groupBox2.Controls.Add(this.label6);
 			this.groupBox2.Controls.Add(this.output_textbox_math_decodeproc);
 			this.groupBox2.Controls.Add(this.label5);
@@ -177,7 +181,7 @@
 			// 
 			// button3
 			// 
-			this.button3.Location = new System.Drawing.Point(155, 321);
+			this.button3.Location = new System.Drawing.Point(155, 360);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(75, 23);
 			this.button3.TabIndex = 11;
@@ -252,6 +256,22 @@
 			this.label6.TabIndex = 19;
 			this.label6.Text = "解码过程：";
 			// 
+			// textBox1
+			// 
+			this.textBox1.Location = new System.Drawing.Point(155, 323);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(75, 21);
+			this.textBox1.TabIndex = 20;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(153, 308);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(41, 12);
+			this.label7.TabIndex = 21;
+			this.label7.Text = "长度：";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -292,6 +312,8 @@
 		public System.Windows.Forms.TextBox output_textbox_math_encodeproc;
 		private System.Windows.Forms.Label label6;
 		public System.Windows.Forms.TextBox output_textbox_math_decodeproc;
+		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.TextBox textBox1;
 	}
 }
 

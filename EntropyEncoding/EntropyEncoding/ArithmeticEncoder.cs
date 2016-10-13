@@ -106,14 +106,14 @@ namespace EntropyEncoding
 		/// 解码串
 		/// </summary>
 		/// <param name="orgNum">要解码的数字</param>
-		public void Decode(double orgNum)
+		/// <param name="len">长度</param>
+		public void Decode(double orgNum, int len)
 		{
 			StringBuilder procsb = new StringBuilder("j\tv\t\ti\tc" + Environment.NewLine);
 			StringBuilder resb = new StringBuilder();
 			double v = orgNum;
 			int encounter = 1;
-			int zflag = 0;
-			while (Math.Abs(v) > 1e-12 && zflag < 2) {
+			while (encounter <= len) {
 				int i = this.LayIn(v);
 				if (i == -1)
 				{
@@ -121,15 +121,11 @@ namespace EntropyEncoding
 				}
 				var inode = this.symbolTable[i];
 				char c = inode.symbol;
-				v = (double)(v - inode.X) / (double)inode.P;
-				procsb.AppendLine(String.Format("{0}\t{1}\t{2}\t{3}", encounter, v.ToString("0.000000000000"), i, c));
+				var orgV = v;
+				v = (double)(orgV - inode.X) / (double)inode.P;
+				procsb.AppendLine(String.Format("{0}\t{1}\t{2}\t{3}", encounter, orgV.ToString("0.000000000000"), i, c));
 				encounter++;
 				resb.Append(c);
-				// 避免极小数重复
-				if (Math.Abs(v) > 1e-12 && Math.Abs(v) < 1e-7)
-				{
-					zflag++;
-                }
 			}
 			// 更新UI
 			ArithmeticEncoder.UIContext.output_textbox_math_decoded.Text = resb.ToString();
