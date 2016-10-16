@@ -51,8 +51,17 @@
 			this.output_textbox_math_symbols = new System.Windows.Forms.TextBox();
 			this.button2 = new System.Windows.Forms.Button();
 			this.input_textbox_math_pattern = new System.Windows.Forms.TextBox();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.label8 = new System.Windows.Forms.Label();
+			this.output_textbox_lzw_encodeproc = new System.Windows.Forms.TextBox();
+			this.button5 = new System.Windows.Forms.Button();
+			this.label9 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.output_textbox_lzw_decodeproc = new System.Windows.Forms.TextBox();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
+			this.groupBox3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -272,19 +281,102 @@
 			this.input_textbox_math_pattern.Size = new System.Drawing.Size(224, 50);
 			this.input_textbox_math_pattern.TabIndex = 5;
 			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.label10);
+			this.groupBox3.Controls.Add(this.output_textbox_lzw_decodeproc);
+			this.groupBox3.Controls.Add(this.label9);
+			this.groupBox3.Controls.Add(this.button5);
+			this.groupBox3.Controls.Add(this.output_textbox_lzw_encodeproc);
+			this.groupBox3.Controls.Add(this.label8);
+			this.groupBox3.Controls.Add(this.textBox3);
+			this.groupBox3.Location = new System.Drawing.Point(12, 417);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(907, 204);
+			this.groupBox3.TabIndex = 2;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "LZW编码";
+			// 
+			// textBox3
+			// 
+			this.textBox3.Location = new System.Drawing.Point(16, 32);
+			this.textBox3.Multiline = true;
+			this.textBox3.Name = "textBox3";
+			this.textBox3.Size = new System.Drawing.Size(175, 166);
+			this.textBox3.TabIndex = 0;
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(14, 17);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(29, 12);
+			this.label8.TabIndex = 22;
+			this.label8.Text = "串：";
+			// 
+			// output_textbox_lzw_encodeproc
+			// 
+			this.output_textbox_lzw_encodeproc.Location = new System.Drawing.Point(278, 32);
+			this.output_textbox_lzw_encodeproc.Multiline = true;
+			this.output_textbox_lzw_encodeproc.Name = "output_textbox_lzw_encodeproc";
+			this.output_textbox_lzw_encodeproc.Size = new System.Drawing.Size(301, 166);
+			this.output_textbox_lzw_encodeproc.TabIndex = 23;
+			// 
+			// button5
+			// 
+			this.button5.Location = new System.Drawing.Point(197, 104);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(75, 23);
+			this.button5.TabIndex = 5;
+			this.button5.Text = "计算";
+			this.button5.UseVisualStyleBackColor = true;
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Location = new System.Drawing.Point(276, 17);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(65, 12);
+			this.label9.TabIndex = 24;
+			this.label9.Text = "编码过程：";
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Location = new System.Drawing.Point(597, 17);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(65, 12);
+			this.label10.TabIndex = 26;
+			this.label10.Text = "解码过程：";
+			// 
+			// output_textbox_lzw_decodeproc
+			// 
+			this.output_textbox_lzw_decodeproc.Location = new System.Drawing.Point(599, 32);
+			this.output_textbox_lzw_decodeproc.Multiline = true;
+			this.output_textbox_lzw_decodeproc.Name = "output_textbox_lzw_decodeproc";
+			this.output_textbox_lzw_decodeproc.Size = new System.Drawing.Size(301, 166);
+			this.output_textbox_lzw_decodeproc.TabIndex = 25;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(928, 422);
+			this.ClientSize = new System.Drawing.Size(930, 626);
+			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "Form1";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "熵编码";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
+			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
 			this.ResumeLayout(false);
 
     }
@@ -314,6 +406,14 @@
 		public System.Windows.Forms.TextBox output_textbox_math_decodeproc;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.GroupBox groupBox3;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.TextBox output_textbox_lzw_decodeproc;
+		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.TextBox output_textbox_lzw_encodeproc;
 	}
 }
 
