@@ -12,6 +12,7 @@ namespace DCT
 		/// <summary>
 		/// 构造器
 		/// </summary>
+		/// <param name="DCTedMat">要处理的矩阵</param>
 		public LuminanceQuantisationer(Mat2D<double> DCTedMat)
 		{
 			this.ProcMat = DCTedMat.Clone();
@@ -104,7 +105,7 @@ namespace DCT
 		private int CalculateSQ(int x, int y)
 		{
 			return (int)Math.Round(this.ProcMat.Get(x, y) / this.LuminanceFilter[y, x]);
-		}
+        }
 		
 		/// <summary>
 		/// 计算矩阵
@@ -120,12 +121,12 @@ namespace DCT
 		/// 反量化系数矩阵
 		/// </summary>
 		private Mat2D<double> RequanMat;
-
+		
 		/// <summary>
 		/// 量化器尺寸
 		/// </summary>
 		private readonly int FilterSize = 8;
-
+		
 		/// <summary>
 		/// 标准亮度量化表
 		/// </summary>
@@ -139,19 +140,5 @@ namespace DCT
 			{ 99, 99, 99, 99, 99, 99, 99, 99 },
 			{ 99, 99, 99, 99, 99, 99, 99, 99 }
 		};
-
-		/// <summary>
-		/// 标准亮度量化表
-		/// </summary>
-		//private readonly int[,] DeltaFilter = {
-		//	{16, 11, 10, 16, 24,  40,  51,  61},
-		//	{12, 12, 14, 19, 26,  58,  60,  55},
-		//	{14, 13, 16, 24, 40,  57,  69,  56},
-		//	{14, 17, 22, 29, 51,  87,  80,  62},
-		//	{18, 22, 37, 56, 68,  109, 103, 77},
-		//	{24, 35, 55, 64, 81,  104, 113, 92},
-		//	{49, 64, 78, 87, 103, 121, 120, 101},
-		//	{72, 92, 95, 98, 112, 100, 103, 99}
-		//};
-    }
+	}
 }
