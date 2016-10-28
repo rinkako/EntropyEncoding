@@ -71,11 +71,6 @@ namespace XMLGenerator
 		private void button4_Click(object sender, EventArgs e)
 		{
 			// 可行性
-			if (this.treeView1.SelectedNode.Level == 0)
-			{
-				MessageBox.Show("不能修改文档的根节点");
-				return;
-			}
 			if (this.textBox2.Text == "")
 			{
 				MessageBox.Show("请输入非空的节点名字");
@@ -112,14 +107,12 @@ namespace XMLGenerator
 			else { this.groupBox1.Enabled = true; }
 			if (this.treeView1.SelectedNode.Level == 0)
 			{
-				this.button2.Enabled = this.groupBox1.Enabled = false;
-				return;
+				this.button2.Enabled = false;
 			}
 			else
 			{
-				this.button2.Enabled = this.groupBox1.Enabled = true;
+				this.button2.Enabled = true;
 			}
-			
 			// 获取当前节点的参数信息
 			var path = this.GetPath(this.treeView1.SelectedNode);
 			var node = this.coreTree.Get(path);

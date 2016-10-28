@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("XML_Root");
+			System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("XML_Root");
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.ColumnKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +51,7 @@
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnKey,
             this.ColumnValue});
+			this.dataGridView1.Enabled = false;
 			this.dataGridView1.Location = new System.Drawing.Point(6, 46);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowTemplate.Height = 23;
@@ -69,7 +70,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(429, 370);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "当前节点的属性";
+			this.groupBox1.Text = "当前节点的子元素";
 			// 
 			// ColumnKey
 			// 
@@ -87,10 +88,10 @@
 			// 
 			this.treeView1.Location = new System.Drawing.Point(12, 12);
 			this.treeView1.Name = "treeView1";
-			treeNode7.Name = "节点0";
-			treeNode7.Text = "XML_Root";
+			treeNode11.Name = "节点0";
+			treeNode11.Text = "XML_Root";
 			this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode7});
+            treeNode11});
 			this.treeView1.Size = new System.Drawing.Size(274, 370);
 			this.treeView1.TabIndex = 2;
 			this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);

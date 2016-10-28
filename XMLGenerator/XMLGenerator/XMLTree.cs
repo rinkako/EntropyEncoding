@@ -18,7 +18,7 @@ namespace XMLGenerator
 			this.Root = new XMLTreeNode()
 			{
 				Children = new List<XMLTreeNode>(),
-				NodeName = "__ROOT__",
+				NodeName = "XML_Root",
 				Parent = null,
 				Parameters = new List<KeyValuePair<string, string>>()
 			};
